@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: white; 
+  font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: rgb(85, 85, 85);
+}
+a, .btn{
+    transition: all 300ms ease;
+}
+nav, .nav-links{
+    display: flex;
+
+}
+nav{
+   
+justify-content: space-around;
+align-items: center;
+height: 17vh;
+}
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+a:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+.logo{
+    font-size: 2rem;
+
+}
+.logo:hover{
+    cursor: default;
+}
+.hamburger-nav{
+    display: none;
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open{
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px , 5px);
+}
+.hamburger-icon.open span:nth-child(2){
+   opacity: 0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px , -5px);
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:first-child{
+   opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    height: 80vh;
+}
+.section-pic-con{
+  
+    display: flex;
+    height: 300px;
+    width: 300px;
+    
+    margin: auto 0;
+}
+.section-pic-con img{
+    border-radius:  50% 50% 46% 54% / 52% 49% 51% 48%;;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.section-text{
+    align-self: center;
+    text-align: center;
+}
+.section-text p{
+    font-weight: 600;
+}
+.section-text-p1{
+    text-align: center;
+    color: black;
+}
+.section-text-p2{
+    color: black;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+#social-container{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+/* #social-container img{
+    background-color: white;
+  
+  
+    border-radius: 50%;
+} */
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+.btn-color-1 , .btn-color-2{
+    border: rgb(53, 53, 53)0.1rem solid;
+}
+.btn-color-1 ,
+.btn-color-2:hover{
+  background-color: rgb(53, 53, 53);
+  cursor: pointer;
+  color: white;
+}
+.btn-color-1:hover{
+background: rgb(0, 0, 0);
+}
+.btn-color-2{
+    background: none;
+}
+.btn-color-2:hover{
+    border: rgb(255, 255, 255)0.1rem solid;
+}
+.btn-container{
+    gap: 1rem;
+}
+.about-container{
+    
+    margin-top: 30px;
+    display: flex;
+   gap: 5rem;
+   justify-content: center;
+   align-items: center;
+}
+.about-img img{
+    border-radius: 3rem;
+}
+.about-main-content{
+   
+    display: flex;
+    gap: 3rem;
+    margin-top: -10px;
+    
+}
+.box-1{
+
+    border: 1px solid black;
+    padding: 1rem 5rem;
+    border-radius: 3rem;
+}
+.box-2{
+    border: 1px solid black;
+    
+    padding: 1rem 5rem;
+    border-radius: 3rem;
+}
+.about-text{
+    width: 60vw;
+    margin-left: 350px;
+    margin-top: -40px;
+}
+
+#experience{
+    position: relative;
+}
+.experience-sub-title{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53)0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.experience-detail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+article .icon{
+    cursor: default;
+}
+#projects{
+    position: relative;
+}
+.experience-details-container{
+    display: flex;
+    gap: 2rem;
+    height: 60vh;
+}
+.color-container{
+    border-color: rgb(163,163,163);
+    background: rgb(250,250,250);
+
+}
+.prj-img{
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+}
+.project-sub-titlr{
+    margin-top: 40px;
+}
+.ppr-btn{
+    margin-left: 100px;
+    display: flex;
+    gap: 1rem;
+}
+.prj-btn{
+    margin-left: -10px;
+    margin-top: 20px;
+ padding: 0.3rem 0.5rem;  
+ border-radius: 5rem;
+
+}
+#Contact{
+    height: 70vh;
+}
+.accounts{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.acc-1{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 3rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+footer{
+    text-align: center;
+}

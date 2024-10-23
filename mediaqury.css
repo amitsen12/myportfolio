@@ -1,0 +1,89 @@
+@media screen and (max-width:1200px){
+    #destop-nav{
+        display: none;
+    }
+    .hamburger-nav{
+        display: flex;
+    }
+    #experience,
+    .experience-details-container{
+        margin-top: 2rem;
+    }
+    #profile,
+    .section-container{
+        display: block;
+    }
+    section,
+    .section-container{
+        height: fit-content;
+    }
+    section{
+        margin: 0 5%;
+    }
+    .section-pic-con{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+       
+    }
+    .about-container{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:600px){
+    #contact,
+    footer{
+       height: 40vh; 
+    }
+    #profile{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    .hero-img{
+        width: 250px;
+    }
+    .about-main-content{
+         margin-top: 20px;
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+    .box-1{
+        font-size: 10px;
+        width: 40%;
+        text-align: center;
+        
+    }
+    .box-2{
+        font-size: 10px;
+        width: 40%;
+        text-align: center;
+        
+    }
+    .about-img{
+        display: none;
+    }
+    .about-text{
+     display: none;
+    }
+    .about-container{
+        display: flex;
+        width: 85%;
+        margin-left: -20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+    }
+  .experience-sub-title{
+    font-size: 1.2rem;
+  }
+ 
+    article{
+        font-size: 1rem;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+}
