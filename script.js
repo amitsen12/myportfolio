@@ -4,7 +4,3 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
-function openpdf(){
-  
-    window.open("https://www.w3schools.com");
-}

@@ -67,23 +67,39 @@
      display: none;
     }
     .about-container{
-        display: flex;
+        /* display: flex;
         width: 85%;
         margin-left: -20px;
-        flex-direction: column;
+        flex-direction: column; */
         flex-wrap: wrap;
        
     }
   .experience-sub-title{
     font-size: 1.2rem;
   }
+  .experience-details-container{
+  flex-wrap: wrap;
+  }
+  #Contact{
+    margin-top: 900px;
+  }
+  /* .accounts{
+ margin-top: 900px;
+  } */
  
+ .nav-links{
+    margin-top: 70px;
+    font-size: 0.7rem;
+ }
     article{
         font-size: 1rem;
     }
-    footer nav{
+    /* footer nav{
         height: fit-content;
         margin-bottom: 2rem;
-    }
+    } */
+     footer p{
+        font-size: 0.7rem;
+     }
 
 }
